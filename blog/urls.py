@@ -22,6 +22,6 @@ from blog import qrcode
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^blog/regist/$', views.regist),
-    url(r'^blog/getqrcode/$',qrcode.get_qrcode)
-
+    url(r'^blog/getqrcode/$',qrcode.get_qrcode),
+    url(r'^blog/showvideos/$',views.show_video)
     ]+static(settings.STATIC_URL)

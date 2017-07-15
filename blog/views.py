@@ -19,5 +19,5 @@ def regist(request):
         uf = UserForm()
     return render_to_response('regist.html',{'uf':uf})
 
-
-
+def show_video(request):
+    return render_to_response('show_video.html')
